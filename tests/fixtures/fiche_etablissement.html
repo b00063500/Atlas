@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head><title>Fiche établissement — HAS</title></head>
+<body>
+<!-- Extrait reconstitué d'une fiche /fiche-etablissement/<FINESS> : les
+     motifs sont ceux observés sur le site (2026), réduits à l'essentiel.
+     La page cite les rapports par un lien JCMS, et — pour les rapports
+     récents — le chemin du fichier dans un bloc JSON de la page. -->
+
+<nav>
+  <a href="jcms/p_3329730/fr/qualite-rapportee-par-le-patient" class="" ><span>Qualité rapportée par le patient</span></a>
+</nav>
+
+<section class="documents">
+  <!-- Rapport récent (référentiel 2026) : le fichier est cité dans la page. -->
+  <a href="jcms/p_3880538/fr/rapport-de-certification-cqss-30171" title="Rapport de certification CQSS - 30171" class=" ctxTooltipCard" target='_blank'>Rapport de certification CQSS - 30171</a>
+  <!-- Le même lien apparaît deux fois dans la page (encart + liste) : dédoublonné. -->
+  <a href="https://www.has-sante.fr/jcms/p_3880538/fr/rapport-de-certification-cqss-30171" class="lien-liste">Rapport de certification CQSS - 30171</a>
+
+  <!-- Rapport V2014 : le fichier de la page ne porte pas le slug → repli doXiti. -->
+  <a href="jcms/c_2608487/fr/rapport-de-certification-v2014-30060" title="Rapport de certification V2014-30060" class=" ctxTooltipCard" target='_blank'>Rapport de certification V2014-30060</a>
+
+  <!-- Rapport de non-certification : forme du slug acceptée par la regex. -->
+  <a href="/jcms/p_3297720/fr/rapport-de-non-certification-v2-suite-a-visite-de-suivi-30417" class="">Rapport de non certification</a>
+</section>
+
+<script type="application/json">
+{
+  "documents": [
+    { "url": "https://www.has-sante.fr/upload/docs/application/pdf/2026-02/dir1/rapport_de_certification_cqss_-_30171.pdf" },
+    { "url": "https://www.has-sante.fr/upload/docs/application/pdf/2026-02/dir1/30171_decision_mel.pdf" },
+    { "url": "https://www.has-sante.fr/upload/docs/application/pdf/2020-01/30060_rac1_vd.pdf" },
+    { "url": "https://www.has-sante.fr/upload/docs/application/pdf/2021-11/30417_vs_non_certification_additif1_vd.pdf" }
+  ]
+}
+</script>
+</body>
+</html>
